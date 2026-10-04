@@ -1,0 +1,17 @@
+{
+  "run_id": "20260927T072106Z-949062",
+  "started_at": "2026-09-27T07:21:06.376291+00:00",
+  "finished_at": "2026-09-27T07:22:25.968203+00:00",
+  "case_count": 27,
+  "config": {
+    "dataset": "law_qa.jsonl",
+    "rag_base_url": "http://127.0.0.1:8092",
+    "knowledge_id": 1,
+    "chat_model_id": 18,
+    "embedding_model": "BAAI/bge-m3",
+    "weaviate_url": "http://127.0.0.1:18088",
+    "probe_top_k": 10,
+    "price_input_per_mtoken": null,
+    "price_output_per_mtoken": null
+  }
+}

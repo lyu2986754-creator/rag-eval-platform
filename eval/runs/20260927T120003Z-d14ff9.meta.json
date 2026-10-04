@@ -1,0 +1,24 @@
+{
+  "run_id": "20260927T120003Z-d14ff9",
+  "started_at": "2026-09-27T12:00:03.383542+00:00",
+  "finished_at": "2026-09-27T12:00:32.412647+00:00",
+  "case_count": 8,
+  "config": {
+    "dataset": "law_qa.jsonl",
+    "rag_base_url": "http://127.0.0.1:8082",
+    "knowledge_id": 1,
+    "chat_model_id": 18,
+    "embedding_model": "BAAI/bge-m3",
+    "weaviate_url": "http://127.0.0.1:18088",
+    "probe_top_k": 10,
+    "scorers": [
+      "retrieval_hit",
+      "citation_support",
+      "semantic_similarity",
+      "points_hit",
+      "refusal"
+    ],
+    "price_input_per_mtoken": null,
+    "price_output_per_mtoken": null
+  }
+}

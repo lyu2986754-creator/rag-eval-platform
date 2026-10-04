@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# 密钥与环境变量：绝不进版本库
+.env
+.env.local
+
+# 临时与日志
+*.log
+*.log.err
+*.err
+*.tmp
+.tmp*
+
+# 本地工具配置
+.mcp.json
+read-docx-mcp.js
+
+# 面试准备材料（含个人信息与公司信息，不公开）
+面试素材.md
+面试自测清单.md
+
+# 前端
+node_modules/
+dist/
+
+# 编辑器与系统
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini

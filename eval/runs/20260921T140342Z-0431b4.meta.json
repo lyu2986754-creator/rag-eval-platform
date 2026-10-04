@@ -1,0 +1,14 @@
+{
+  "run_id": "20260921T140342Z-0431b4",
+  "started_at": "2026-09-21T14:03:42.295118+00:00",
+  "finished_at": "2026-09-21T14:05:03.384802+00:00",
+  "case_count": 27,
+  "config": {
+    "rag_base_url": "http://127.0.0.1:8082",
+    "knowledge_id": 1,
+    "chat_model_id": 18,
+    "embedding_model": "BAAI/bge-m3",
+    "weaviate_url": "http://127.0.0.1:18088",
+    "probe_top_k": 10
+  }
+}
