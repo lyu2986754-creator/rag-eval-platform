@@ -29,7 +29,7 @@
 | 目录 | 归属 | 内容 |
 | --- | --- | --- |
 | `D:\Project-self\AI qiyexiangmu\` | **被测对象（Agent 项目）** | `sk-knowledge`（Java RAG）、`sk-knowledge-frontend`（Vue）、`agentic-rag`（Python Agentic 服务）、`deploy`（中间件编排与运维脚本） |
-| `D:\Project-self\new project\` | **评测系统** | `project.md`、`AGENTS.md`、`README.md`、`eval`（评测平台）、`frontend`（评测平台前端） |
+| `D:\Project-self\rag-eval-platform\` | **评测系统** | `project.md`、`AGENTS.md`、`README.md`、`eval`（评测平台）、`frontend`（评测平台前端） |
 
 **两部分的代码不得混放。** 判断归属的唯一标准：
 
@@ -481,6 +481,7 @@ runner、评分器、HTTP 客户端全部自己写。**禁止**拿 LangChain / L
 | 2026-09-27 | 模式开关放在 RAG 前端，而非评测平台配置 | 用户要求可在 RAG 界面切换，便于演示。实现为前端切换 baseURL（agentic → Python 8092，朴素 → Java 8082），朴素模式零代理开销，对比最干净 |
 | 2026-09-27 | 基线冻结，`run_id = 20260927T035654Z-f95c9f` | 16/27 通过，过程层 retrieval_hit 0.64，术语辨析题检索命中率 50%。这是后续"升级前"的对照基准 |
 | 2026-09-27 | `deploy/` 内的 `.env` 独立化 | deploy/ 划归被测对象后，不能再读评测平台的 `eval/.env`。API key 本就属于 RAG 自身凭据，因此改为读同目录 `.env` |
+| 2026-10-04 | 评测系统目录由 `new project\` 重命名为 `rag-eval-platform\` | 原目录名与项目无关，表达不出它是「RAG 应用自动化评测平台」；新名与 GitHub 仓库 `lyu2986754-creator/rag-eval-platform` 保持一致。纯目录重命名，代码、数据模型与运行方式均不变；上一条 2026-09-27 的目录边界结论继续有效，只是路径随本次重命名更新 |
 
 ---
 
